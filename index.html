@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <h1>This is a simple form using JavaScript/jQuery</h1>
+        </header>
+        <main>
+            
+                <div class="myForm " id="reg-form" action="" method="post">
+                    <h2 id="msg"></h2>
+                    <div class="row">
+                        <div class="col-label">
+                            <label for="fname">First name:</label>                        
+                        </div>
+                        <div class="col-input">                       
+                            <input type="text" id="f-name" name="fname" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">
+                            <label for="email">Your email:</label>                        
+                        </div>
+                        <div class="col-input">                       
+                            <input type="email" id="e-mail" name="email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">
+                            <label for="uusername">Username:</label>                       
+                        </div>
+                        <div class="col-input">                          
+                            <input type="text" id="user-name" name="username" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label">
+                            <label for="password">Password :</label>                        
+                        </div>    
+                        <div class="col-input">                           
+                            <input type="password" id="pass-wd" name="passwd" required>
+                            <img id="pass-1" src="images/tick.png" width="15">
+                        </div>                             
+                    </div> 
+                    <div class="row">
+                        <div class="col-label">
+                            <label for="password">Confirm Password :</label>                        
+                        </div>    
+                        <div class="col-input">                           
+                            <input type="password" id="pass-wd-2" name="passwd-2" required>
+                            <img id="pass-2" src="images/tick.png" width="15">
+                        </div>
+                    </div>   
+                    <div class="row">
+                        <div class="col-label">   
+                            <label for="submit"></label>                     
+                        </div>
+                        <div class="col-input">                               
+                            <button id="reg-sub-btn" class="reg-btn" disabled>Register</button>
+                        </div>
+                    </div>               
+                    
+                    
+                </div>
+                <div  id="out_put" class="out-put">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2" >Thank you for Registering</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >Name</td>
+                                <td id="name-input"></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td id="email-input"></td>
+                            </tr>
+                            <tr>
+                                <td>Username</td>
+                                <td id="uname-input"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>   
+                        
+           
+        </main>
+        <footer>
+            &copy;Dinesh pathirage-ZyonStudios
+        </footer>             
+        <script src="js/script.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

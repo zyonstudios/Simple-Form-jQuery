@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    max-width: 50%;
+    margin:0 auto;
+    background-color: aquamarine;
+    background-image: linear-gradient(to right, rgb(62, 176, 180) , yellow);
+    height: 100px;
+    padding-top: 25px;
+    padding-left:150px;
+
+}
+header h1{   
+    margin: 0;
+}
+main{
+    max-width: 50%;
+    margin:auto;
+    border: 1px solid #ccc;    
+    height: 800px;
+}
+.myForm{
+    max-width: 80%;
+    margin: 100px auto;   
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 50px 0;
+    border-radius: 0.3em; 
+    background-color: rgb(247, 247, 247);      
+}
+.out-put{
+    max-width: 80%;
+    margin: 100px auto;   
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 50px 0;
+    border-radius: 0.3em; 
+    background-color: rgb(247, 247, 247);
+    height: 400px;      
+}
+table {
+    max-width: 80%; 
+    margin: auto;
+    border: 1px solid rgb(24, 23, 23);   
+}
+table th{
+    padding: 10px;
+}
+ table td{
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+}
+.row{
+    width: 100%;   
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+.col-label {
+float: left;
+width: 40%;
+padding: 20px 5px 20px 80px;
+text-align: left;
+font-size: 20px;
+}
+.col-input {
+float: left;
+width: 60%;
+padding: 10px;
+text-align: left;
+}
+.col-input img{
+display: none;
+}
+.myForm input{
+    width:350px;
+    height: 40px;
+    border-radius: 0.3em;
+    background-color: rgb(178, 199, 199);
+    border: 1px solid rgb(44, 44, 44);   
+    
+}
+.myForm input:focus{
+    outline: none !important;
+    background-color: rgb(248, 248, 159);
+}
+.myForm button{
+    width: 200px;
+    height: 50px;
+    font-size: large;
+}
+.myForm button:hover:not([disabled]){
+    color: rgb(91, 37, 156);
+    border-color: blue;
+    font-size: large;
+}
+
+footer{
+    position: absolute;
+    width: 50%;    
+    height: 100px;
+    background-color: rgb(29, 28, 28);
+    color: rgb(5, 131, 131);
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    left: 25%;
+    
+   
+}
