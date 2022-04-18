@@ -9,12 +9,14 @@ $(document).ready(function(){
         if(pass1len >= 8)
         {
             $("#pass-1").show();
+            
         }    
         else
         {
             $("#pass-1").hide();
+           
         }   
-        $("#reg-sub-btn").enable() ;   
+       
 
         });                  
         
@@ -22,7 +24,7 @@ $(document).ready(function(){
     $("#pass-wd-2").keyup(function(){
         let pass1 =$("#pass-wd").val().trim();
         let pass2 =$(this).val().trim();
-        if(pass1 == pass2)
+        if(pass1 == pass2&&pass1.length >=8)
         {
             $("#pass-2").show();
             document.getElementById("reg-sub-btn").disabled = false;
@@ -31,8 +33,7 @@ $(document).ready(function(){
         else{
             $("#pass-2").hide();
             document.getElementById("reg-sub-btn").disabled = true;
-        }  
-                    
+        }                             
                             
         }); 
     
